@@ -1,4 +1,5 @@
 import React from 'react';
+import { StatusBar } from 'react-native'
 import { MaterialCommunityIcons, AntDesign } from '@expo/vector-icons'
 import Suggestions from '../../components/Suggestions'
 import Activities from '../../components/Activities'
@@ -8,6 +9,8 @@ import Banner from '../../components/Banner'
 import { Wrapper, Header, Container, Balance, BalanceContainer, BalanceTitle } from './styles'
 export default function Home() {
     return (
+       <>
+       <StatusBar barStyle="light-content" backgroundColor="red" />
         <Wrapper>
             <Container>
                 <Header>
@@ -27,5 +30,6 @@ export default function Home() {
                 <Banner />
             </Container>
         </Wrapper>
+        </>
     );
 }
